@@ -1,0 +1,36 @@
+!!! 5
+html
+	head
+		meta(charset = 'utf-8')
+		meta('http-equiv' = 'X-UA-Compatible', content = 'IE=edge,chrome=1')
+		title Basic Starter
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/reset.css')
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
+		script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+		script(src = 'js/app.js')
+		//if lt IE 9
+			script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
+	body
+		header#mainheader
+			.site
+				#logo: a(href="/"): img(src="img/think_geek_logo.svg", width="285", height="71", alt="Think Geek")
+				#cartsummary
+					span.count 0
+					|  
+					span.label Items
+				form#sitesearch
+					input(type="text")
+					input(type="submit")
+		nav#mainnav
+			ul
+				li: a(href='#') T-shirts and Apparel
+				li: a(href='#') Geek
+				li: a(href='#') Gadgets
+				li: a(href='#') Home &amp; Office
+				li: a(href='#') Computer Stuff
+				li: a(href='#') Caffeine &amp; Edibles
+				li: a(href='#') Electronics
+				li: a(href='#') Geek Kids
+				li: a(href='#') Books
+		#content
+		footer
