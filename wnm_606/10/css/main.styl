@@ -1,3 +1,4 @@
+border-radius = 2px
 body
 	background url('../img/tactile_noise_@2X.png')
 	background-size 48px 48px
@@ -92,3 +93,41 @@ body
 	top 15px
 #content
 	color black
+// Home
+#hero
+	width 960px
+	height 410px
+	background #FFF
+	margin 0 auto
+	border-radius border-radius
+	box-sizing border-box
+	padding 0 50px
+	position relative
+	margin-top 40px
+	h2
+		font-family '8bit_wondernominal'
+		color #FC5241
+		font-size 36px
+		text-shadow -2px 2px 0 #7D2820
+		padding 8px 20px
+		line-height 44px
+	&:before, &:after
+		width 50px
+		height 100%
+		content ''
+		position absolute
+		top 0
+		background #FA5348
+	&:before
+		left 0
+		border-top-left-radius border-radius
+		border-bottom-left-radius border-radius
+	&:after
+		right 0
+		border-top-right-radius border-radius
+		border-bottom-right-radius border-radius
+
+
+
+
+

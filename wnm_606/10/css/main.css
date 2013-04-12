@@ -111,3 +111,41 @@ body {
 #content {
   color: #000;
 }
+#hero {
+  width: 960px;
+  height: 410px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 0 50px;
+  position: relative;
+  margin-top: 40px;
+}
+#hero h2 {
+  font-family: '8bit_wondernominal';
+  color: #fc5241;
+  font-size: 36px;
+  text-shadow: -2px 2px 0 #7d2820;
+  padding: 8px 20px;
+  line-height: 44px;
+}
+#hero:before,
+#hero:after {
+  width: 50px;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  background: #fa5348;
+}
+#hero:before {
+  left: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+#hero:after {
+  right: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
