@@ -2,6 +2,15 @@ body {
   background: url("../img/tactile_noise_@2X.png");
   background-size: 48px 48px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+a {
+  color: #195259;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 .site {
   width: 960px;
@@ -111,6 +120,36 @@ body {
 #content {
   color: #000;
 }
+h3.chevron {
+  margin-left: -10px;
+  background: #fc5241;
+  padding: 6px 0 10px 20px;
+  font-family: '8bit_wondernominal';
+  color: #7d2820;
+  font-size: 21px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 35px;
+  position: relative;
+}
+h3.chevron:after {
+  position: absolute;
+  width: 30px;
+  height: 35px;
+  content: url("../img/chevron_end_small.svg");
+  top: 0;
+  right: -30px;
+}
+h3.chevron:before {
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 10px solid #ae382d;
+  border-left: 10px solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
 #hero {
   width: 960px;
   height: 410px;
@@ -121,6 +160,10 @@ body {
   padding: 0 50px;
   position: relative;
   margin-top: 40px;
+  margin-bottom: 55px;
+  background: url("../img/hero_bg_turret.jpg") no-repeat #fff;
+  background-size: contain;
+  background-position: 480px 0;
 }
 #hero h2 {
   font-family: '8bit_wondernominal';
@@ -129,6 +172,22 @@ body {
   text-shadow: -2px 2px 0 #7d2820;
   padding: 8px 20px;
   line-height: 44px;
+}
+#hero h2 a {
+  color: #fc5241;
+}
+#hero h2 a:hover {
+  text-decoration: none;
+}
+#hero ul {
+  margin: 40px 0 0 37px;
+  font-size: 18px;
+  line-height: 22px;
+}
+#hero img {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
 }
 #hero:before,
 #hero:after {
@@ -148,4 +207,158 @@ body {
   right: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+#hero .selector_list {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-align: center;
+}
+#hero .selector {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+}
+#hero .selector.selected {
+  background: #fc5241;
+}
+#featured_products,
+#excellent_deals {
+  border-radius: 2px;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+#featured_products .items {
+  text-align: center;
+  padding: 30px 0 15px;
+}
+#featured_products .item {
+  width: 220px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-right: 80px;
+  vertical-align: top;
+}
+#featured_products .item:last-child {
+  margin-right: 0;
+}
+#featured_products .img {
+  width: 220px;
+  height: 155px;
+  background: #333;
+  background-size: cover;
+}
+#featured_products .price {
+  color: #195259;
+  font-size: 14px;
+  font-weight: bold;
+  height: 0;
+  border-bottom: 30px solid #51c7d2;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  display: inline-block;
+  width: 84px;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  top: 15px;
+  left: -42px;
+  line-height: 30px;
+}
+#featured_products .price:before,
+#featured_products .price:after {
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 10px solid transparent;
+  border-right: 10px solid #195259;
+  position: absolute;
+  bottom: -35px;
+  -webkit-transform: rotate(45deg);
+}
+#featured_products .price:before {
+  left: -27px;
+}
+#featured_products .price:after {
+  right: -27px;
+}
+#featured_products .title {
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+#featured_products .summary {
+  font-size: 12px;
+  line-height: 14px;
+}
+#excellent_deals .items {
+  text-align: center;
+  padding: 12px 0 15px 0;
+}
+#excellent_deals .item {
+  width: 100px;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+#excellent_deals .item:last-child {
+  margin-right: 0;
+}
+#excellent_deals .item .img {
+  border: 1px solid #333;
+  width: 100px;
+  height: 100px;
+}
+#excellent_deals .item .discount {
+  height: 18px;
+  color: #7d2820;
+  font-size: 11px;
+  background: #fc5241;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 3px 3px 0 9px;
+  position: absolute;
+  left: -4px;
+  top: 74px;
+}
+#excellent_deals .item .discount:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #7d2820;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+#excellent_deals .item .discount:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 9px solid #fc5241;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -9px;
+}
+#excellent_deals .item .title {
+  font-size: 11px;
+  margin: 8px 0 6px;
+}
+#excellent_deals .item .title a {
+  color: #333;
+}
+#excellent_deals .item .title a:hover {
+  text-decoration: none;
+}
+#excellent_deals .item .price a {
+  font-weight: bold;
+  color: #195259;
 }
