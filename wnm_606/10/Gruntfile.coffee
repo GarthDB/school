@@ -24,6 +24,7 @@ module.exports = (grunt) ->
         files:
           'index.html': 'index.jade'
           'home-and-office.html': 'home-and-office.jade'
+          'portal-2-sentry-turret-usb-desk-defender.html': 'portal-2-sentry-turret-usb-desk-defender.jade'
     coffee:
       compile:
         files:
