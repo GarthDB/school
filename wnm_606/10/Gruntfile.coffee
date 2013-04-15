@@ -23,6 +23,7 @@ module.exports = (grunt) ->
       compile:
         files:
           'index.html': 'index.jade'
+          'home-and-office.html': 'home-and-office.jade'
     coffee:
       files:
         'app.js': 'app.coffee'
