@@ -306,26 +306,63 @@ h3.chevron
 			color #195259
 			font-size 12px
 // Sub page
-#sidenav nav
-	background white
-	font-size 10px
+#sidenav
 	width 120px
-	box-sizing border-box
+	float left
+	nav
+		background white
+		font-size 10px
+		box-sizing border-box
+		border-radius border-radius
+		margin-bottom 10px
+		padding-bottom 9px
+		h3
+			font-size 12px
+			font-weight bold
+			color white
+			background #195259
+			padding 9px 2px 7px 9px
+			border-top-left-radius border-radius
+			border-top-right-radius border-radius
+			margin-bottom 5px
+		li a
+			display block
+			box-sizing border-box
+			height 18px
+			padding 5px 0 0 9px
+			text-decoration none
+			&:hover, &.selected
+				background #FACAC7
+section#list
+	width 830px
+	float right
+	background white
 	border-radius border-radius
-	margin-bottom 10px
-	h3
+	box-sizing border-box
+	padding 10px 24px
+	.item
+		width 140px
+		display inline-block
+		vertical-align top
+		height 220px
+		margin 0 8px 10px
+		text-align center
+		&:first-child, &:nth-child(6n)
+			margin-left 0
+		&:nth-child(5n)
+			margin-right 0
+	.title a
 		font-size 12px
 		font-weight bold
-		color white
-		background #195259
-		padding 9px 2px 7px 9px
-		border-top-left-radius border-radius
-		border-top-right-radius border-radius
-	li a
-		display block
-		box-sizing border-box
-		height 18px
-
+		color #333
+	.price
+		margin-top 7px
+		font-weight bold
+		font-size 14px
+	.cut
+		text-decoration line-through
+		color #70170f
+		font-size 10px
 
 
 

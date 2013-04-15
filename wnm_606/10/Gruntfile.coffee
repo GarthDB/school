@@ -25,8 +25,9 @@ module.exports = (grunt) ->
           'index.html': 'index.jade'
           'home-and-office.html': 'home-and-office.jade'
     coffee:
-      files:
-        'app.js': 'app.coffee'
+      compile:
+        files:
+          'js/app.js': 'js/app.coffee'
     connect:
       livereload:
         options:
